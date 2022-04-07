@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cryptotracker</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    h1,h4{
+        color: wheat;
+        font-style: italic;
+    }
+    footer{
+        bottom: 0;
+        color: wheat;
+        position: fixed;
+        text-align: left;
+        font-size: x-large;
+        font-style: italic;
+        font-weight: 1000;
+    }
+    .fix{
+        border:2px solid #fca311;
+        border-radius: 5px;
+        background-color:#fca311 ;
+        padding: 10px;
+    
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="row justify-content-center">
+    <h1 class="col-md-7 text-center">CRYPTO TRACKER</h1>
+    <h4 class="col-md-8 text-center">By Yashkumar</h4>
+    <div class="col-md-6 row justify-content-center main fix">
+       <div class="col-10">
+           <form action="" id="searchForm">
+               <div class="form-row">
+                   <div class="col-12 form-group">
+                       <label for="xyz">
+                           <span style="font-weight: 600;">Coins</span>
+                       </label>
+                       <select name="coinType" class="form-control" id="xyz">
+            <option value="bitcoin">Bitcoin</option>
+            <option value="dogecoin">Dogecoin</option>
+            <option value="tron">Tron</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="polkadot">Polkadot</option>
+            <option value="tether">Tether</option>
+        </select>
+        </div>
+        </div>
+        <button type="submit" class="col-12 btn btn-primary">Get Price</button>
+    </form>
+       </div>
+   </div>
+   <div class="col-md-7 text-center row justify-content-center">
+       <table class="p-4 col-md-7 m-2" border="1px" style="background-color: rgb(255, 255, 255); font-weight: 700;" id="tableResult">
+            
+       </table>
+       <h5 id="result"></h5>
+   </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thank you for visiting!</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="app.js"></script>
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '61181695-fa08-4106-a55c-eb45d015ed17', f: true }); done = true; } }; })();</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8X3R0H3GSX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8X3R0H3GSX');
+</script>
+
+</body>
+</html>
